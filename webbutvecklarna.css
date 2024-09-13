@@ -1,0 +1,19 @@
+
+
+
+
+.section1, .section2, .section3{
+    margin: 4.5rem 4.5rem 4.5rem 4.5rem;
+}
+
+.section3{
+    margin-right: 10rem;
+}
+
+.section img{
+   max-width: 160%;
+}
+
+
+
+
