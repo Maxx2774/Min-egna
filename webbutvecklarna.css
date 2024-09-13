@@ -4,16 +4,24 @@
 
 .section1, .section2, .section3{
     margin: 4.5rem 4.5rem 4.5rem 4.5rem;
+    transition: transform 0.2s ease-in-out;
+    
 }
+
+.section1:hover, .section2:hover, .section3:hover{
+    transform: scale(1.02) translateY(-1.5rem);
+    cursor: pointer;
+}
+
 
 .section3{
     margin-right: 10rem;
 }
 
+
+
 .section img{
-   max-width: 160%;
+   max-width: 130%;
+   border-radius: 15px;
 }
-
-
-
 

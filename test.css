@@ -1,0 +1,55 @@
+body{
+    font-family: 'Space Mono';
+}
+
+.flex{
+    display: flex;
+}
+
+.image-container{
+    text-align: center;
+    margin: 10rem 5rem 5rem 5rem;
+    position: relative;
+    display: flex;
+    max-width: 300px;
+    transition: .5s ease;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 2rem; 
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+.image-container .overlay-text{
+    align-self: flex-end;
+}
+
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-container:hover {
+    transform: scale(1.1) translateY(-1.5rem);
+}
+
+
+.overlay-text:hover{
+    opacity: 1;
+    
+}
+
+
