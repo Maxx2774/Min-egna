@@ -1,8 +1,9 @@
+
+
+
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#¤%&";
 
 let interval = null;
-
-
 
 document.querySelector("h1").onmouseover = event => {  
   let iteration = 0;
@@ -37,6 +38,9 @@ $(document).ready(function(){
     $('img').removeClass('show').filter('#' + v + 'Picture').addClass('show');
   });
 });
+
+
+
 
 
 
