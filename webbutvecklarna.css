@@ -28,6 +28,7 @@
 .flex{
     display: flex;
     margin-right: 3rem;
+    
 }
 
 .image-container{
@@ -35,7 +36,6 @@
     margin: 0 2rem 5rem 2rem;
     position: relative;
     display: flex;
-    
     transition: .5s ease;
 }
 
@@ -79,3 +79,33 @@
     display: flex;
     align-items: center;
 }
+
+
+
+@media only screen and (max-width: 1500px) {
+    .main-container{
+        flex-wrap: wrap;
+    }
+
+    .flex{
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        justify-content: center; 
+        margin-right: 0;
+       
+    }
+
+    .image-container{
+        margin-top: 5rem;
+    }
+
+   .image-container:hover{
+    transform: none;
+   }
+
+   .overlay-text{
+    opacity: 1;
+   }
+
+   
+  }

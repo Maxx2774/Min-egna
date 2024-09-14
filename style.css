@@ -77,9 +77,7 @@ footer ul li, a{
 
 }
 
-.main-container {
-    display: flex;
-}
+
 
 .sidebar{
     margin: 5rem 0 0 5rem;
@@ -108,26 +106,16 @@ footer ul li, a{
 }
 
 @media only screen and (max-width: 1500px) {
-    .main-container{
-        flex-wrap: wrap;
-    }
-
-    .flex{
-        flex-wrap: wrap;
-        margin-top: 5rem;
-        justify-content: center; 
-       
-    }
-
-    .flex .image-container{
-        margin-top: 5rem;
-        
-    }
 
     .sidebar{
         width: 100%;
         text-align: center;
+        margin-left: 0;
         
+    }
+
+    .rad1 ul, .rad2 ul, .rad3 ul, .rad4 ul{
+        padding: 0;
     }
 
    

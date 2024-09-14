@@ -1,8 +1,105 @@
 form label{
     color: #444;
-    display: block;
+
 }
 
 form label:nth-child(1){
     display: inline;
+}
+
+
+.box{
+    display: flex;
+    margin: 5rem 5rem 0 5rem;
+    width: 90%;
+}
+
+.box1{
+    flex-basis: 60%;
+    margin-right: 2rem;
+}
+
+.box2{
+    flex-basis: 40%;
+}
+
+.main-container1{
+    display: flex;
+}
+
+
+img{
+    display: none;
+}
+
+img.show{
+    display: inline;
+}
+
+.grid{
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+    font-size: 2rem;
+}
+
+input[type="text"], input[type="email"]{
+    font-size:2rem;
+    border-radius: 10px;
+    margin-top: .5rem;
+}
+
+#email{
+    width: 95.5%;
+}
+
+
+.förnamntext{
+    width: 40%;
+}
+
+.efternamntext{
+    width: 90%;
+}
+
+.förnamn{
+    grid-column: 1/6;
+    grid-row: 1/4;
+    margin-right: 1rem;
+}
+
+.efternamn{
+    grid-column: 5/6;
+    grid-row: 1/4;
+}
+
+.email{
+    grid-column: 1/6;
+    grid-row: 2/4;
+}
+
+.ålder{
+    grid-column: 1/6;
+    grid-row: 3/4;
+}
+
+.kön{
+    grid-column: 2/6;
+    grid-row: 3/4;
+}
+
+.konsult{
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+
+.ommig{
+    grid-column: 1/6;
+    grid-row: 4/4;
+}
+
+
+.förnamn, .efternamn, .email, .ålder, .ommig, .konsult, .kön{
+    display: flex;
+    flex-direction: column;
 }

@@ -1,4 +1,10 @@
 
+$(document).ready(function(){
+  $('select[name="inputType"]').on('change', function(e) {
+    var v = $(this).val();
+    $('img').removeClass('show').filter('#' + v + 'Bild').addClass('show');
+  });
+});
 
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#¤%&";
@@ -32,12 +38,6 @@ document.querySelector("h1").onmouseover = event => {
 
 
 
-$(document).ready(function(){
-  $('select[name="inputType"]').on('change', function(e) {
-    var v = $(this).val();
-    $('img').removeClass('show').filter('#' + v + 'Picture').addClass('show');
-  });
-});
 
 
 
