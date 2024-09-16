@@ -3,9 +3,7 @@ form label{
 
 }
 
-form label:nth-child(1){
-    display: inline;
-}
+
 
 
 .box{
@@ -20,6 +18,7 @@ form label:nth-child(1){
 }
 
 .box2{
+    text-align: center;
     flex-basis: 40%;
 }
 
@@ -38,68 +37,99 @@ img.show{
 
 .grid{
     display: grid;
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 1em;
+    grid-template-areas: 
+        "förnamn efternamn"
+        "email email"
+        "ålder meddelande"
+        "kön meddelande"
+        "konsult meddelande"
+        "submit .";
+    gap: 1em;
     font-size: 2rem;
 }
 
-input[type="text"], input[type="email"]{
-    font-size:2rem;
+input{
+    font-size: 2rem;
     border-radius: 10px;
     margin-top: .5rem;
+    color: #444;
+    border: #444 2px solid;
 }
 
-#email{
-    width: 95.5%;
+select{
+    font-size: 2rem;
+    border-radius: 10px;
+    margin-top: .5rem;
+    color: #444;
+    border: #444 2px solid;
 }
 
-
-.förnamntext{
-    width: 40%;
+textarea{
+    border-radius: 10px;
+    color: #444;
+    border: #444 2px solid;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 0;
+    margin: 0;
 }
 
-.efternamntext{
-    width: 90%;
+#slider::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: #444 2px solid;
+    
 }
+
+#slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.förnamn, .efternamn, .email, .ålder, .meddelande, .konsult, .kön{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .förnamn{
-    grid-column: 1/6;
-    grid-row: 1/4;
-    margin-right: 1rem;
+    grid-area: förnamn;
 }
 
 .efternamn{
-    grid-column: 5/6;
-    grid-row: 1/4;
+    grid-area: efternamn;
 }
 
 .email{
-    grid-column: 1/6;
-    grid-row: 2/4;
+    grid-area: email;
 }
 
 .ålder{
-    grid-column: 1/6;
-    grid-row: 3/4;
+    grid-area: ålder;
 }
 
 .kön{
-    grid-column: 2/6;
-    grid-row: 3/4;
+    grid-area: kön;
+}
+
+.meddelande{
+    grid-area: meddelande;
 }
 
 .konsult{
-    grid-column: 5/6;
-    grid-row: 3/4;
+    grid-area: konsult;
 }
 
-.ommig{
-    grid-column: 1/6;
-    grid-row: 4/4;
+.submit{
+    grid-area: submit;
+    text-align: center;
 }
 
-
-.förnamn, .efternamn, .email, .ålder, .ommig, .konsult, .kön{
-    display: flex;
-    flex-direction: column;
+.meddelande{
+    box-sizing: border-box;
 }

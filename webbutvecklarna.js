@@ -1,12 +1,4 @@
 
-$(document).ready(function(){
-  $('select[name="inputType"]').on('change', function(e) {
-    var v = $(this).val();
-    $('img').removeClass('show').filter('#' + v + 'Bild').addClass('show');
-  });
-});
-
-
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#¤%&";
 
 let interval = null;
@@ -36,9 +28,17 @@ document.querySelector("h1").onmouseover = event => {
   }, 30);
 }
 
+$(document).ready(function(){
+  $('select[name="inputType"]').on('change', function(e) {
+    var v = $(this).val();
+    $('img').removeClass('show').filter('#' + v + 'Bild').addClass('show');
+  });
+});
 
 
-
+const changeSliderValue = (value) => {
+    document.getElementById("ålder1").innerText = value + " år";
+}
 
 
 

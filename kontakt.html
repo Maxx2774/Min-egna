@@ -6,56 +6,46 @@
     <title>Contact Sales Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="kontakt.css">
+    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <script src="./webbutvecklarna.js" defer></script>
 
 </head>
 <body>
     <header>
        
         <li><a href="index.html" ><h1 data-value="WEBBUTVECKLARNA">WEBBUTVECKLARNA</h1></a></li>
-        <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-        <script src="./webbutvecklarna.js" defer></script>
        
     </header>
 
 <main>
     <div class="main-container1">
-        <div class="sidebar">
-            <ul>
-                <li><a href="" class="underline">PROJEKT 1</a></li>
-                <li><a href="" class="underline">PROJEKT 2</a></li>
-                <li><a href="" class="underline">PROJEKT 3</a></li>
-                <li><a href="" class="underline">PROJEKT 4</a></li>
-                <li><a href="" class="underline">PROJEKT 5</a></li>
-                <li><a href="" class="underline">PROJEKT 6</a></li>
-            </ul>
-        </div>
-
         <div class="box">
             <div class="box1">
                 <div class="contact-form">
                     <form>
                         <div class="grid">
-                            <div class="box0 förnamn"><label for="fname">FÖRNAMN:</label> <input type="text" id="fname" name="firstname" class="förnamntext" required></div>
-                            <div class="box0 efternamn"><label for="lname">EFTERNAMN:</label><input type="text" id="lname" name="lastname" class="efternamntext" required></div>
-                            <div class="box0 email"><label for="email">EMAIL:</label><input type="email" id="email" name="email" required></div> 
-                            <div class="box0 ålder"><label for="age">ÅLDER:</label><input type="number" id="age" name="age"> </div>
-                            <div class="box0 ommig"><label for="about">OM MIG:</label><textarea id="about" name="about"></textarea></div>
-                            <div class="box0 kön"><label for="gender">KÖN:</label> 
-                            <select id="gender" name="gender">
-                                <option value="male">MALE</option>
-                                <option value="female">FEMALE</option> 
+                            <div class="box0 förnamn"><label for="fname">Förnamn</label> <input type="text" id="fname" name="firstname" required></div>
+                            <div class="box0 efternamn"><label for="lname">Efternamn</label><input type="text" id="lname" name="lastname" required></div>
+                            <div class="box0 email"><label for="email">Email</label><input type="email" id="email" name="email" required></div> 
+                            <div class="box0 ålder"><label for="age">Ålder</label><input type="range" id="slider" min="18" max="100" onchange="changeSliderValue(this.value)"><label id="ålder1">18 år</label></div>
+                            <div class="box0 meddelande"><label for="about">Meddelande</label><textarea type="about" id="about" name="about"></textarea></div>
+                            <div class="box0 kön"><label for="gender">Kön</label> 
+                            <select type="gender" id="gender" name="gender">
+                                <option disabled selected value>Välj kön</option>
+                                <option value="male">Man</option>
+                                <option value="female">Kvinna</option> 
                             </select></div>
                             
-                            <div class="box0 konsult"><label for="consultant">VÄLJ KONSULT :</label> 
-                                <select name="inputType" form="carform" class="form-control" id="inputType" name="inputType" title="inputType" required>
+                            <div class="box0 konsult"><label for="consultant">Konsult</label> 
+                                <select type="konsult" name="inputType" form="carform" class="form-control" id="inputType" name="inputType" title="inputType" required>
                                     <option disabled selected value>Välj konsult</option>
-                                    <option value="adel">ADEL</option>
-                                    <option value="linda">LINDA</option>
-                                    <option value="max">MAX</option>
+                                    <option value="adel">Adel</option>
+                                    <option value="linda">Linda</option>
+                                    <option value="max">Max</option>
                                 </select>
                             </div>
-                            <div class="box0 submit"><input type="submit" value="SUBMIT"></div>
+                            <div class="box0 submit"><input style="cursor: pointer;" type="submit" value="SUBMIT"></div>
                             
                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                         </div>
